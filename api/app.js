@@ -430,18 +430,21 @@ app.post("/save", async (req, res) => {
 app.get("/", (req, res) => {
   res.json({
     status: "API is working",
-    mongodb: mongoose.connection.readyState === 1 ? "Connected" : "Disconnected",
-    timestamp: new Date().toISOString()
+    // mongodb: mongoose.connection.readyState === 1 ? "Connected" : "Disconnected",
+    // timestamp: new Date().toISOString()
   });
 });
 
-process.on('SIGINT', async () => {
-  console.log('🔄 Shutting down gracefully...');
-  await mongoose.connection.close();
-  console.log('✅ MongoDB connection closed');
-  process.exit(0);
-});
+// process.on('SIGINT', async () => {
+//   console.log('🔄 Shutting down gracefully...');
+//   await mongoose.connection.close();
+//   console.log('✅ MongoDB connection closed');
+//   process.exit(0);
+// });
 
-
+// const port = process.env.PORT || 5000;
+// app.listen(port, () => {
+//   console.log(`🚀 Server is running on port ${port}`);
+// });
 
 export default app;
