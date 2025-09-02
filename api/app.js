@@ -89,9 +89,9 @@ const mapOption = {
    ------------------------- */
 app.post('/save-basic', async (req, res) => {
   try {
-    if (mongoose.connection.readyState !== 1) {
-      return res.status(503).json({ error: 'Database not connected' });
-    }
+    // if (mongoose.connection.readyState !== 1) {
+    //   return res.status(503).json({ error: 'Database not connected' });
+    // }
 
     const { name, companyName, country, email, number } = req.body;
 
