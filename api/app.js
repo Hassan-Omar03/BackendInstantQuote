@@ -150,7 +150,7 @@ app.post('/save-basic', async (req, res) => {
     try {
       await Promise.race([
         transporter.sendMail(adminEmail),
-        new Promise((_, reject) => setTimeout(() => reject(new Error('Admin email timeout')), 20000))
+        new Promise((_, reject) => setTimeout(() => reject(new Error('Admin email timeout')), 12000))
       ]);
     } catch (emailErr) {
       console.error('Admin email send error (non-fatal):', emailErr);
