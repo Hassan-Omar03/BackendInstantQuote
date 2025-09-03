@@ -110,7 +110,7 @@ app.post('/save-basic', async (req, res) => {
     // Save with 8s timeout
     const saved = await Promise.race([
       basic.save(),
-      new Promise((_, reject) => setTimeout(() => reject(new Error('Save operation timed out')), 8000))
+      new Promise((_, reject) => setTimeout(() => reject(new Error('Save operation timed out')), 10000))
     ]);
 
     // Build admin email HTML (same style as /save admin email)
