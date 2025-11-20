@@ -118,7 +118,6 @@ app.post('/save-basic', async (req, res) => {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="text-align: center; margin-bottom: 20px;">
           <img src="https://bim.africa/logo.png" style="max-width: 200px; height: auto;" alt="BIM Africa Logo" />
-
         </div>
         <div style="background-color: #f8f9fa; padding: 16px; border-radius: 8px; margin-bottom: 16px;">
           <h2 style="color: #333; margin: 0;">New Basic Lead Received</h2>
@@ -239,7 +238,6 @@ app.post("/save", async (req, res) => {
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
             <div style="text-align: center; margin-bottom: 30px;">
               <img src="https://bim.africa/logo.png" alt="BIM Africa Logo" style="max-width: 200px; height: auto;" />
-
             </div>
             <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
               <h2 style="color: #333; margin-top: 0;">Quote Number: ${qNumber}</h2>
@@ -289,7 +287,6 @@ app.post("/save", async (req, res) => {
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
             <div style="text-align: center; margin-bottom: 30px;">
               <img src="https://bim.africa/logo.png" style="max-width: 200px; height: auto;" />
-
             </div>
             <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
               <h2 style="color: #333; margin-top: 0;">New Website Quotation Request</h2>
